@@ -42,8 +42,8 @@ git clone [URL_DO_SEU_REPOSITORIO]
 Crie e ative um ambiente virtual (recomendado):
 
 python -m venv venv
-# No Windows: venv\Scripts\activate
-# No Linux/Mac: source venv/bin/activate
+## No Windows: venv\Scripts\activate
+## No Linux/Mac: source venv/bin/activate
 
 
 Instale os pacotes necessários (As dependências estão no requirements.txt):
@@ -58,7 +58,7 @@ streamlit run app.py
 
 (Lembrando: para o front funcionar preenchido, a API FastAPI precisa estar rodando em paralelo)
 
-Integrantes do Grupo (Dota):
+## Integrantes do Grupo (Dota):
 
 [Nome do Integrante 1] - [RM]
 
