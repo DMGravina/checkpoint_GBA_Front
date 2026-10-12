@@ -39,7 +39,7 @@ O setup é bem simples, só precisa do Python instalado na máquina.
 
 - Clonar este repositório:
 
->git clone [URL_DO_SEU_REPOSITORIO]
+>git clone https://github.com/DMGravina/checkpoint_GBA_Front
 
 - Criar e ativar um ambiente virtual:
 
