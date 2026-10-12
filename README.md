@@ -34,29 +34,27 @@ Basicamente, o front "carimba" cada chamada. O back-end recebe isso, calcula a l
 
 O setup é bem simples, só precisa do Python instalado na máquina.
 
-Clonar este repositório:
+- Clonar este repositório:
 
-git clone [URL_DO_SEU_REPOSITORIO]
+>git clone [URL_DO_SEU_REPOSITORIO]
 
-Criar e ativar um ambiente virtual:
+- Criar e ativar um ambiente virtual:
 
-python -m venv venv
-
+>python -m venv venv
+---
 ### No Windows: 
 >venv\Scripts\activate
 ### No Linux/Mac: 
 >source venv/bin/activate
+---
 
+- Instalar os pacotes necessários (As dependências estão no requirements.txt):
 
-Instalar os pacotes necessários (As dependências estão no requirements.txt):
+>pip install streamlit requests pandas plotly
 
-pip install streamlit requests pandas plotly
+- Subir a aplicação:
 
-
-Subir a aplicação:
-
-streamlit run app.py
-
+>streamlit run app.py
 
 (Lembrando: para o front funcionar preenchido, a API FastAPI precisa estar rodando em paralelo)
 
