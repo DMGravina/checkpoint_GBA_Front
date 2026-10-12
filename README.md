@@ -60,8 +60,12 @@ O setup é bem simples, só precisa do Python instalado na máquina.
 
 ## Integrantes do Grupo (Dota):
 
-[Nome do Integrante 1] - [RM]
-
-[Nome do Integrante 2] - [RM]
-
-[Nome do Integrante 3] - [RM]
+>Davi Gravina – RM 565619
+>
+>Henry Andrade Browne – RM 562089
+>
+>Luis Filipe Chaves – RM 564706
+>
+>Luiz Felipe dos Santos Tragi – RM 565009
+>
+>Marcelo Roberto Maso Junior – RM 562163
