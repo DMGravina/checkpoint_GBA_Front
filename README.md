@@ -15,10 +15,10 @@ Consumo de API: O front não conversa direto com o banco de dados. Nós usamos a
 #Traz o status ao vivo e a severidade do sensor.
 >GET /v1/sensores/{tag}/leitura-atual
 >
-#Puxa a série temporal para montarmos os gráficos e tabelas de tendência.
+#Puxa a série temporal para montar os gráficos e tabelas de tendência.
 >GET /v1/sensores/{tag}/historico
 >
-#Onde a mágica da governança acontece (traz os logs de quem acessou o quê).
+#Traz os logs de quem acessou o quê).
 >GET /v1/observabilidade
 
 - Navegação em Escada (Conceito): A UI foi pensada para, no futuro, permitir o drill-down (Fábrica -> Setor -> Máquina -> Sensor). Na versão atual, focamos na renderização limpa da telemetria do motor (ex: motor WEG W22).
