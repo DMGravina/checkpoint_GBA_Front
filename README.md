@@ -34,24 +34,26 @@ Basicamente, o front "carimba" cada chamada. O back-end recebe isso, calcula a l
 
 O setup é bem simples, só precisa do Python instalado na máquina.
 
-Clone este repositório:
+Clonar este repositório:
 
 git clone [URL_DO_SEU_REPOSITORIO]
 
-
-Crie e ative um ambiente virtual (recomendado):
+Criar e ativar um ambiente virtual:
 
 python -m venv venv
-## No Windows: venv\Scripts\activate
-## No Linux/Mac: source venv/bin/activate
+
+### No Windows: 
+>venv\Scripts\activate
+### No Linux/Mac: 
+>source venv/bin/activate
 
 
-Instale os pacotes necessários (As dependências estão no requirements.txt):
+Instalar os pacotes necessários (As dependências estão no requirements.txt):
 
 pip install streamlit requests pandas plotly
 
 
-Suba a aplicação:
+Subir a aplicação:
 
 streamlit run app.py
 
