@@ -14,8 +14,10 @@ Consumo de API: O front não conversa direto com o banco de dados. Nós usamos a
 
 #Traz o status ao vivo e a severidade do sensor.
 >GET /v1/sensores/{tag}/leitura-atual
+>
 #Puxa a série temporal para montarmos os gráficos e tabelas de tendência.
 >GET /v1/sensores/{tag}/historico
+>
 #Onde a mágica da governança acontece (traz os logs de quem acessou o quê).
 >GET /v1/observabilidade
 
