@@ -12,15 +12,12 @@ Por ter mais costume e acharmos mais prático, optamos por construir a interface
 
 Consumo de API: O front não conversa direto com o banco de dados. Nós usamos a biblioteca requests do Python para bater nos três endpoints principais da nossa API em FastAPI:
 
+#Traz o status ao vivo e a severidade do sensor.
 >GET /v1/sensores/{tag}/leitura-atual
-
-> #Traz o status ao vivo e a severidade do sensor.
-
+#Puxa a série temporal para montarmos os gráficos e tabelas de tendência.
 >GET /v1/sensores/{tag}/historico
-> #Puxa a série temporal para montarmos os gráficos e tabelas de tendência.
-
+#Onde a mágica da governança acontece (traz os logs de quem acessou o quê).
 >GET /v1/observabilidade
-> #Onde a mágica da governança acontece (traz os logs de quem acessou o quê).
 
 - Navegação em Escada (Conceito): A UI foi pensada para, no futuro, permitir o drill-down (Fábrica -> Setor -> Máquina -> Sensor). Na versão atual, focamos na renderização limpa da telemetria do motor (ex: motor WEG W22).
 
