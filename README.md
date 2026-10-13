@@ -6,7 +6,7 @@ A ideia aqui é tirar o monitoramento de ativos do papel e colocar numa interfac
 
 ## Arquitetura do Front-end
 
-Por ter mais costume e acharmos mais prático, optamos por construir a interface utilizando Streamlit.
+Devido a outros projetos trabalhados em aula, decidimos prosseguir com o *Gradio*.
 
 ### Funcionamento:
 
