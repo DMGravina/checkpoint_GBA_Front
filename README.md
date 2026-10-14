@@ -1,11 +1,15 @@
 # Forzy Digital Twin - Interface e Observabilidade
 
->Este é o repositório do Front-end do nosso projeto integrado (Governança em IA + Front-end) para o desafio da Forzy.
+> Este é o repositório do Front-end e Back-end do nosso projeto integrado (Governança em IA + Front-end) para o desafio da Forzy.
 
-A ideia aqui é tirar o monitoramento de ativos do papel e colocar numa interface visual amigável. Para este checkpoint, estamos focando na base da nossa "escada": os Sensores. Embora a visão de longo prazo do projeto abranja a fábrica inteira, aqui o escopo é garantir que a leitura de dados esteja funcionando e que ela seja rastreável.
+A ideia aqui é tirar o monitoramento de ativos do papel e colocar numa interface visual amigável. Para este checkpoint, estamos focando na base da nossa "escada": os Sensores. Embora a visão de longo prazo do projeto abranja a fábrica inteira (Planta -> Setor -> Ativo -> Sensores), aqui o escopo é garantir que a leitura de dados base esteja funcionando e que ela seja rastreável.
+
+## 🎥 Vídeo de Demonstração
+[Link para o vídeo no YouTube](LINK)
 
 ## Arquitetura do Repositório
 
+```text
 checkpoint_GBA_Front/
 │
 ├── backend/                  
@@ -20,11 +24,12 @@ checkpoint_GBA_Front/
 ├── .env                      
 ├── requirements.txt          
 ├── README.md                 
-└── Checkpoint_GBA_FE.pdf     
+└── Checkpoint_GBA_FE.pdf
+```
 
 ### Funcionamento:
 
-- Consumo de API: O front não conversa direto com o banco de dados. Nós usamos a biblioteca requests do Python para bater nos três endpoints principais da nossa API em FastAPI:
+- Consumo de API: O front não conversa direto com o banco de dados. Nós usamos a biblioteca *requests* do Python para bater nos três endpoints principais da nossa API em FastAPI:
 
 #Traz o status ao vivo e a severidade do sensor.
 >GET /v1/sensores/{tag}/leitura-atual
@@ -39,13 +44,13 @@ checkpoint_GBA_Front/
 
 - Renderização: Usamos componentes nativos do Streamlit para plotar os gráficos de histórico e exibir os cards com os valores atuais de forma bem responsiva.
 
-## Como aplicamos a Governança de IA aqui?
+## Como aplicamos a Governança de IA?
 
 Considerando que a gente não saberia de onde a requisição viria ou quanto tempo ela demoraria, aplicamos o nosso contrato de observabilidade.
 
-Toda vez que a nossa interface faz um request para a API do FastAPI, nós injetamos Headers de Contexto (como X-Session-Id e X-Feature).
+Toda vez que a nossa interface faz um request para a API do FastAPI, nós injetamos Headers de Contexto (como X-Session-Id, X-Feature, X-Client-Platform e X-App-Version).
 
-Basicamente, o front "carimba" cada chamada. O back-end recebe isso, calcula a latência, junta com o timestamp e salva. Depois, o nosso próprio front consome o endpoint de /observabilidade para exibir um relatório de auditoria direto na tela. Assim, se um limite de completude ou freshness estourar, a gente sabe exatamente onde e quando o gargalo aconteceu.
+Então, em resumo, nosso front "carimba" cada chamada. O back-end recebe, calcula a latência, junta com o timestamp e salva. Depois, o nosso próprio front consome o endpoint de /observabilidade para exibir um relatório de auditoria direto na tela. Isso ajuda a gente a saber exatamente onde e quando o gargalo aconteceu, se um limite de completude estourar.
 
 ## Como rodar localmente
 
