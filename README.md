@@ -70,15 +70,21 @@ O setup é bem simples, só precisa do Python instalado na máquina.
 >source venv/bin/activate
 ---
 
-- Instalar os pacotes necessários (As dependências estão no requirements.txt):
+- Instalar os pacotes necessários:
 
->pip install streamlit requests pandas plotly
+>pip install -r requirements.txt
 
-- Subir a aplicação:
+- Subir a aplicação
 
->streamlit run app.py
+Abra dois terminais:
 
-(Lembrando: para o front funcionar preenchido, a API FastAPI precisa estar rodando em paralelo)
+>#No Terminal 1, iniciar a API FastAPI
+>uvicorn backend.api:app --reload
+
+>#No Terminal 2, iniciar a interface Gradio
+>python frontend/main.py
+
+(Lembrando: A interface do Gradio abrirá automaticamente no navegador)
 
 ## Integrantes do Grupo (Dota):
 
