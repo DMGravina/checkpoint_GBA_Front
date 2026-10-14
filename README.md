@@ -79,9 +79,11 @@ O setup é bem simples, só precisa do Python instalado na máquina.
 Abra dois terminais:
 
 >#No Terminal 1, iniciar a API FastAPI
+>
 >uvicorn backend.api:app --reload
 
 >#No Terminal 2, iniciar a interface Gradio
+>
 >python frontend/main.py
 
 (Lembrando: A interface do Gradio abrirá automaticamente no navegador)
