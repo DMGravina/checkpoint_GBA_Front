@@ -85,7 +85,7 @@ Abra dois terminais:
 
 (Lembrando: A interface do Gradio abrirá automaticamente no navegador)
 
-## Integrantes do Grupo (Dota):
+## Integrantes do Grupo:
 
 >Davi Gravina – RM 565619
 >
