@@ -94,5 +94,3 @@ Abra dois terminais:
 >Luis Filipe Chaves – RM 564706
 >
 >Luiz Felipe dos Santos Tragi – RM 565009
->
->Marcelo Roberto Maso Junior – RM 562163
