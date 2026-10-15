@@ -4,9 +4,6 @@
 
 A ideia aqui é tirar o monitoramento de ativos do papel e colocar numa interface visual amigável. Para este checkpoint, estamos focando na base da nossa "escada": os Sensores. Embora a visão de longo prazo do projeto abranja a fábrica inteira (Planta -> Setor -> Ativo -> Sensores), aqui o escopo é garantir que a leitura de dados base esteja funcionando e que ela seja rastreável.
 
-## 🎥 Vídeo de Demonstração
-[Link para o vídeo no YouTube](LINK)
-
 ## Arquitetura do Repositório
 
 ```text
