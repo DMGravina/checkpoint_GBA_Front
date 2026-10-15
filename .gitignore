@@ -1,0 +1,24 @@
+# Ambientes Virtuais
+venv/
+env/
+.env
+
+# Arquivos compilados do Python e Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Documentos locais e PDFs gerados (Opcional: comente esta linha se quiser subir o PDF do contrato)
+# *.pdf
+# *.docx
+
+# Bancos de dados locais
+*.sqlite3
+*.db
+
+# Logs e arquivos de sistema operacional
+*.log
+.DS_Store
+Thumbs.db
